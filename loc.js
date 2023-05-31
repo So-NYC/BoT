@@ -22,7 +22,7 @@ function mydata(){
         if(window.location.hash) {
             var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
         } else {
-            var hash = "Use Direct Link / Not Place HashTag on Link"
+            var hash = ""
         }
 
         var check_brave = navigator.brave;
