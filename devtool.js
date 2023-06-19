@@ -1,18 +1,1 @@
-// Disable right-click
-document.addEventListener('contextmenu', (e) => e.preventDefault());
-
-function ctrlShiftKey(e, keyCode) {
-  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-}
-
-document.onkeydown = (e) => {
-  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-  if (
-    event.keyCode === 123 ||
-    ctrlShiftKey(e, 'I') ||
-    ctrlShiftKey(e, 'J') ||
-    ctrlShiftKey(e, 'C') ||
-    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-  )
-    return false;
-};
+function a0_0x4a21(_0x33da0d,_0x53f8ea){var _0x10afc9=a0_0x10af();return a0_0x4a21=function(_0x4a2194,_0xc2c651){_0x4a2194=_0x4a2194-0x14d;var _0x378ea6=_0x10afc9[_0x4a2194];return _0x378ea6;},a0_0x4a21(_0x33da0d,_0x53f8ea);}var a0_0x539afa=a0_0x4a21;(function(_0x28ed40,_0x3e7a3f){var _0x5f0d10=a0_0x4a21,_0x909a7d=_0x28ed40();while(!![]){try{var _0x2a7022=-parseInt(_0x5f0d10(0x156))/0x1+-parseInt(_0x5f0d10(0x153))/0x2+-parseInt(_0x5f0d10(0x154))/0x3*(parseInt(_0x5f0d10(0x15d))/0x4)+-parseInt(_0x5f0d10(0x157))/0x5+-parseInt(_0x5f0d10(0x14d))/0x6*(-parseInt(_0x5f0d10(0x150))/0x7)+-parseInt(_0x5f0d10(0x151))/0x8*(-parseInt(_0x5f0d10(0x158))/0x9)+parseInt(_0x5f0d10(0x155))/0xa*(parseInt(_0x5f0d10(0x159))/0xb);if(_0x2a7022===_0x3e7a3f)break;else _0x909a7d['push'](_0x909a7d['shift']());}catch(_0xdc8560){_0x909a7d['push'](_0x909a7d['shift']());}}}(a0_0x10af,0xbd863),document[a0_0x539afa(0x14f)]('contextmenu',_0x2fecc4=>_0x2fecc4[a0_0x539afa(0x15a)]()));function ctrlShiftKey(_0x1b94c4,_0x46b25a){var _0xe7b96f=a0_0x539afa;return _0x1b94c4[_0xe7b96f(0x15b)]&&_0x1b94c4[_0xe7b96f(0x152)]&&_0x1b94c4['keyCode']===_0x46b25a['charCodeAt'](0x0);}function a0_0x10af(){var _0x52f4fd=['7oTjTUS','8bFDfIV','shiftKey','2018702NUzOKE','64191tLATOl','6618870ohzAdw','616602OQDHKu','281735TfhAaz','8909379SAMDrN','33ZaMZrv','preventDefault','ctrlKey','keyCode','144KqVWWO','1519746PvNAqm','charCodeAt','addEventListener'];a0_0x10af=function(){return _0x52f4fd;};return a0_0x10af();}document['onkeydown']=_0x49497e=>{var _0x46a4df=a0_0x539afa;if(event[_0x46a4df(0x15c)]===0x7b||ctrlShiftKey(_0x49497e,'I')||ctrlShiftKey(_0x49497e,'J')||ctrlShiftKey(_0x49497e,'C')||_0x49497e['ctrlKey']&&_0x49497e[_0x46a4df(0x15c)]==='U'[_0x46a4df(0x14e)](0x0))return![];};
