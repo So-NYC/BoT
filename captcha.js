@@ -1,1 +1,30 @@
-function a0_0x28c5(){const _0x3f6618=['21770MCwIlb','open','13059264QwTdwP','user-sum','getElementById','y-value','156uQGxsC','Try\x20Again','x-value','3865431gqdWDq','717074dJFYqm','18696daHBvJ','872iBwHYc','33RQHjFb','value','textContent','random','2QwZWnn','floor','4148360AIbGSO','myButton','Confirm','515PuOXNx','81999NJhlIn'];a0_0x28c5=function(){return _0x3f6618;};return a0_0x28c5();}function a0_0x5082(_0x339798,_0x552e17){const _0x28c564=a0_0x28c5();return a0_0x5082=function(_0x50823f,_0x988f89){_0x50823f=_0x50823f-0xe1;let _0x455cde=_0x28c564[_0x50823f];return _0x455cde;},a0_0x5082(_0x339798,_0x552e17);}(function(_0x24ffc9,_0x759ccb){const _0x1df657=a0_0x5082,_0x5e8e2f=_0x24ffc9();while(!![]){try{const _0x3eeb98=parseInt(_0x1df657(0xe5))/0x1+-parseInt(_0x1df657(0xec))/0x2*(parseInt(_0x1df657(0xe4))/0x3)+-parseInt(_0x1df657(0xe6))/0x4*(-parseInt(_0x1df657(0xf1))/0x5)+parseInt(_0x1df657(0xe1))/0x6*(-parseInt(_0x1df657(0xf3))/0x7)+-parseInt(_0x1df657(0xe7))/0x8*(-parseInt(_0x1df657(0xf2))/0x9)+-parseInt(_0x1df657(0xee))/0xa*(-parseInt(_0x1df657(0xe8))/0xb)+-parseInt(_0x1df657(0xf5))/0xc;if(_0x3eeb98===_0x759ccb)break;else _0x5e8e2f['push'](_0x5e8e2f['shift']());}catch(_0x4974bc){_0x5e8e2f['push'](_0x5e8e2f['shift']());}}}(a0_0x28c5,0xeee3e));function generateRandomNumbers(){const _0x4eaa31=a0_0x5082,_0x5c207b=Math[_0x4eaa31(0xed)](Math[_0x4eaa31(0xeb)]()*0xa),_0x8bb71a=Math[_0x4eaa31(0xed)](Math[_0x4eaa31(0xeb)]()*0xa);document['getElementById'](_0x4eaa31(0xe3))[_0x4eaa31(0xea)]=_0x5c207b,document[_0x4eaa31(0xf7)](_0x4eaa31(0xf8))[_0x4eaa31(0xea)]=_0x8bb71a;}function verifySum(_0x2459e3){const _0x5acf5b=a0_0x5082,_0x3da522=parseInt(document['getElementById'](_0x5acf5b(0xe3))[_0x5acf5b(0xea)]),_0x4d19a3=parseInt(document[_0x5acf5b(0xf7)]('y-value')[_0x5acf5b(0xea)]),_0x10aa97=parseInt(document['getElementById'](_0x5acf5b(0xf6))[_0x5acf5b(0xe9)]);if(_0x10aa97===_0x3da522+_0x4d19a3){const _0x4d7ed1=document['getElementById'](_0x5acf5b(0xef));_0x4d7ed1['textContent']=_0x5acf5b(0xf0),generateRandomNumbers(),window[_0x5acf5b(0xf4)](_0x2459e3);}else{alert('Try\x20again\x20!');const _0x1cb139=document['getElementById'](_0x5acf5b(0xef));_0x1cb139[_0x5acf5b(0xea)]=_0x5acf5b(0xe2),generateRandomNumbers();}}
+function generateRandomNumbers() {
+    // Generate random numbers for x and y
+    const x = Math.floor(Math.random() * 10); // Change the range as needed
+    const y = Math.floor(Math.random() * 10); // Change the range as needed
+
+    // Display the random numbers
+    document.getElementById("x-value").textContent = x;
+    document.getElementById("y-value").textContent = y;
+}
+
+function verifySum(targetsite) {
+    const x = parseInt(document.getElementById("x-value").textContent);
+    const y = parseInt(document.getElementById("y-value").textContent);
+    const userSum = parseInt(document.getElementById("user-sum").value);
+
+    if (userSum === x + y) {
+        // Redirect to your website if correct
+        const buttonElement = document.getElementById("myButton");
+        buttonElement.textContent = "Confirm";
+        generateRandomNumbers();
+        window.open(targetsite);
+        // window.location.href = "https://facebook.com";
+    } else {
+        alert("Try again !");
+        const buttonElement = document.getElementById("myButton");
+        buttonElement.textContent = "Try Again";
+        generateRandomNumbers();
+        // window.open('http://pornhub.com');
+    }
+}
